@@ -1,0 +1,732 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Main Section */
+#main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  padding: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+nav.sticky {
+  background: #fff;
+  padding: 15px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  margin-top: 1vh;
+  height: 9vh;
+}
+
+nav.sticky .logo {
+  color: #000000;
+}
+
+ul {
+  display: flex;
+}
+
+ul li a {
+  color: #fff;
+  padding: 10px 22px;
+  text-transform: uppercase;
+}
+
+nav.sticky ul li a {
+  color: #000000;
+}
+
+nav.sticky ul li a:hover {
+  color: #fff;
+}
+
+ul li a:hover {
+  background: orange;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+  position: relative;
+  max-width: 680px;
+  text-align: center;
+  top: -4vh;
+}
+
+.main-content h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.main-content h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: -15px;
+}
+
+/* Subscribe Button */
+.main-content label {
+  position: relative;
+  margin-top: 12px;
+}
+
+/* gallery Section */
+.gallery-heading {
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.gallery-heading h1 {
+  font-size: 2rem;
+  color: black;
+  font-weight: 500;
+}
+
+#gallery .gallery-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.gallery-content img {
+  height: 280px;
+  width: 350px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+
+}
+
+.gallery-content img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+/* About Section */
+#about {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  background-color: rgba(218, 223, 225, 0.3);
+  ;
+}
+
+.about-text {
+  width: 500px;
+  justify-content: center;
+}
+
+.about-text span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.about-text p {
+  font-size: 1rem;
+  margin: 5px 0px 15px;
+  text-align: justify;
+}
+
+.about-text button {
+  padding: 12px 22px;
+  border: none;
+  background: orange;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about-text button:hover {
+  background: #8d9194;
+}
+
+.about-image {
+  width: 450px;
+  height: 500px;
+}
+
+.about-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* rates Section */
+#rates {
+  margin-top: -15vh;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.rates-text {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.rates-text span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+table,
+td,
+th {
+  border: 1px solid orange;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  align-items: center;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+/* Contact Form */
+#contact-box {
+  background-color: #e5e5e5;
+}
+
+#contact-box form {
+  display: grid;
+  max-width: 1000px;
+  padding: 40px 200px;
+  margin-left: 30vh;
+
+}
+
+#contact-box h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#contact-box form input,
+#contact-box form textarea {
+  font-size: 16px;
+  margin-bottom: 18px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: orange;
+  resize: none;
+}
+
+#contact-box form textarea {
+  min-height: 200px;
+}
+
+#contact-box form input::placeholder,
+#contact-box form textarea::placeholder {
+  color: black;
+}
+
+#contact-box form input[type="submit"] {
+  margin-top: 12px;
+  max-width: 100px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Button to Pop-up*/
+.text-box {
+  position: relative;
+  left: -15.3vh;
+  top: 2vh;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: orange;
+  color: black;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Pop-up Box */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 5px;
+  top: 10%;
+  height: 55%;
+  width: 36%;
+  position: relative;
+  transition: all 0s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("images/form_bg.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.popup h2 {
+  position: absolute;
+  margin-left: 19.5%;
+  margin-top: 2%;
+  color: orange;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: -11px;
+  right: 2px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: orange;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+#first-group {
+  border: none;
+  width: 50%;
+  margin-top: 12%;
+  margin-left: -20px;
+  position: absolute;
+}
+
+#content {
+  border: 1px solid #fff;
+  margin: 1px;
+  margin-left: 8px;
+  padding: 5px;
+}
+
+#content #input-group {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+  width: 60%;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.fa {
+  display: inline-block;
+  color: orange;
+  border-right: 1px solid #fff;
+  padding: 8px;
+  margin-left: -30px;
+}
+
+#second-group {
+  border: none;
+  width: 50%;
+  margin-top: 12%;
+  margin-left: 203px;
+  position: absolute;
+}
+
+#submit-btn {
+  margin-top: 240px;
+  margin-left: -12vh;
+  background: transparent;
+  color: #fff;
+  width: 150px;
+  border: 1px solid orange;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  position: absolute;
+}
+
+#submit-btn:hover {
+  background-color: orange;
+  transition: .5s;
+}
+
+.content2 p {
+  display: inline;
+  margin: 0 85px;
+  font-size: 8px;
+  color: orange;
+  font-weight: bold;
+}
+
+.content2 {
+  position: absolute;
+  margin-top: 30.6%;
+  margin-left: -3.4%;
+}
+
+input {
+  color-scheme: dark;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+
+  nav,
+  nav.sticky {
+    padding: 10px 50px;
+    z-index: 1000;
+  }
+
+  .menu {
+    position: fixed;
+    top: 68px;
+    right: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    transition: 0.5s ease;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  nav ul li a {
+    font-size: 31px;
+  }
+
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    align-content: center;
+  }
+
+  .toggle.active {
+    background: url(images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+
+  .about-text span {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .rates-text span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    top: -50vh;
+  }
+
+  .text-box {
+    font-size: 0.8rem;
+    position: relative;
+  }
+
+  #contact-box form {
+    margin-left: 1vh;
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 660px) {
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #rates {
+    margin-top: -10vh;
+    flex-direction: column-reverse;
+    padding: 50px;
+  }
+
+  #rates span,
+  table {
+    font-size: 0.5rem;
+  }
+
+  .gallery-content img {
+    height: 250px;
+    width: 250px;
+    padding: 15px 5px;
+  }
+
+  table {
+    position: relative;
+    width: 90%;
+    margin-left: 3vh;
+    top: -4vh;
+  }
+}
+
+@media (max-width: 500px) {
+  #main {
+    background-position: right;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-content h3 {
+    margin-top: -10 px;
+    font-size: 0.8rem;
+  }
+
+  .text-box {
+    position: relative;
+    font-size: 0.6rem;
+    top: 1vh;
+    left: -13.2vh;
+    width: 100vw;
+  }
+
+  .popup {
+    top: 0;
+    height: 72%;
+    width: 85%;
+    overflow: scroll;
+
+  }
+
+  .popup h2 {
+    left: 1vh;
+    font-size: 0.9rem;
+  }
+
+  .popup .close {
+    color: orange;
+  }
+
+  #first-group {
+    width: 90%;
+    margin-top: 12%;
+    margin-left: -10px;
+    position: absolute;
+  }
+
+  #second-group {
+    width: 90%;
+    margin-top: 78%;
+    margin-left: -10px;
+    position: absolute;
+  }
+
+  #submit-btn {
+    top: 49%;
+    left: 24.2vh;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .content2 p {
+    display: block;
+    padding: 84px 0;
+    font-size: 8px;
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .content2 {
+    top: -5%;
+  }
+
+  .gallery-content img {
+    height: 200px;
+    width: 200px;
+    padding: 10px 4px;
+  }
+
+  #contact-box form {
+    max-width: 500px;
+    padding: 20px 40px;
+  }
+
+  .about-text {
+    width: 300px;
+  }
+
+  @media (max-width: 400px) {
+    .rates-text {
+      width: 300px;
+    }
+
+    nav ul li a {
+      font-size: 28px;
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    @media (max-width: 360px) {
+      .about-text {
+        width: 300px;
+      }
+
+      .about-image {
+        width: 300px;
+        height: 400px;
+      }
+
+      .about-text {
+        width: 300px;
+      }
+
+      #contact-box form {
+        margin-left: -5vh;
+      }
+    }
+  }
+}

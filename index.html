@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Del Prado</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#main" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#gallery" onclick="toggleMenu();">Gallery</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li><a href="#rates" onclick="toggleMenu();">Rates and Packages</a></li>
+      <li><a href="#contact-box" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Main Home Text And Subscribe Box -->
+  <section id="main">
+    <div class="main-content">
+      <h1>Villa Del Prado</h1>
+      <h3>Beach and Resort</h3>
+      <div class="text-box">
+        <a href="#popup1" class="btn btn-white btn-animate">Book Now!</a>
+      </div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Make Your Reservation </h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <div class="container">
+              <form class="form-group">
+                <div id="first-group">
+                  <div id="content">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" id="input-group" placeholder="First name">
+                  </div>
+                  <div id="content">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="number" id="input-group" placeholder="Phone number">
+                  </div>
+                  <div id="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <input type="date" id="input-group">
+                  </div>
+                  <div id="content">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <input type="number" id="input-group" placeholder="No. of Adult">
+
+                  </div>
+                </div>
+                <div id="second-group">
+                  <div id="content">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" id="input-group" placeholder="Last name">
+                  </div>
+                  <div id="content">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <input type="email" id="input-group" placeholder="Email">
+                  </div>
+                  <div id="content">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <input type="date" id="input-group">
+                  </div>
+                  <div id="content">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <input type="number" id="input-group" placeholder="No. of Children">
+                  </div>
+                </div>
+                <a target="_blank" type="submit" value="Submit" id="submit-btn">Submit</a>
+              </form>
+              <div class="content2">
+                <p>(CHECK IN)</p>
+                <p>(CHECK OUT)</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- gallery Section -->
+  <section id="gallery">
+    <div class="gallery-heading">
+      <h1>Gallery</h1>
+    </div>
+    <div class="gallery-content">
+      <img src="images/1.jpg">
+      <img src="images/2.jpg">
+      <img src="images/3.jpg">
+      <img src="images/4.jpg">
+      <img src="images/5.jpg">
+      <img src="images/6.jpg">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-text">
+      <span>About Us</span>
+      <p>Villa del Prado and Beach resort, situated in the exclusive Southern Tagalog Region of Quezon Province, has the
+        kind of facilities and services that can cater to your every whim.The resort offers a host of different
+        accommodations taking advantage of the lively ambience provided by the Villa del Prado Resort. You can bathe
+        under the sun in the softest, finest stretch of sand beach at Villa del Prado beach resort located along the
+        coast of Tayabas Bay.</p>
+      <button>Learn More</button>
+    </div>
+    <!-- About Image -->
+    <div class="about-image">
+      <img src="images/bg.jpg">
+    </div>
+  </section>
+
+  <!-- rates Section -->
+  <section id="rates">
+    <!-- rates Text & tables -->
+    <div class="rates-text">
+      <span>Rate and Package</span>
+      <table>
+        <tr>
+          <th>ENTRANCE FEE</th>
+          <th>ADULT</th>
+          <th>CHILD</th>
+        </tr>
+        <tr>
+          <td>1 Day<br>(6:00 AM to 3:00 PM)</td>
+          <td>P 100.00</td>
+          <td>P 80.00</td>
+        </tr>
+        <tr>
+          <td>Overnight Stay</td>
+          <td>P 120.00</td>
+          <td>P 100.00</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>HUTS AND TABLES</th>
+          <th>Seating Capacity</th>
+          <th>Day Tour</th>
+          <th>Overnight</th>
+        </tr>
+        <tr>
+          <td>FIBERGLASS HUTS</td>
+          <td>12 - 16</td>
+          <td>P 800</td>
+          <td>P 1000</td>
+        </tr>
+        <tr>
+          <td>NATIVE HUTS<br>(Behind Fiberglass)</td>
+          <td>8 - 12</td>
+          <td>P 1,100</td>
+          <td>P 1,300
+          </td>
+        </tr>
+        <tr>
+          <td>NATIVE HUTS<br>(Near Duplex)</td>
+          <td>8 - 12</td>
+          <td>P 1,200</td>
+          <td>P 1,400</td>
+        </tr>
+        <tr>
+          <td>NATIVE HUTS<br>(Papag Beachside)</td>
+          <td>8 - 12</td>
+          <td>P 1,500</td>
+          <td>P 1,700</td>
+        </tr>
+        <tr>
+          <td>NATIVE HUTS<br>(Papag Poolside)</td>
+          <td>8 - 12</td>
+          <td>P 1,500</td>
+          <td>P 1,700</td>
+        </tr>
+        <tr>
+          <td>WHOLE PAVILLION</td>
+          <td>150</td>
+          <td>P 15,000</td>
+          <td>P 18,000</td>
+        </tr>
+        <tr>
+          <td>HALF PAVILLION</td>
+          <td>60 - 80</td>
+          <td>P 10,000</td>
+          <td>P 13,000</td>
+        </tr>
+        <tr>
+          <td>1/4 PAVILLION</td>
+          <td>30 - 50</td>
+          <td>P 6,000</td>
+          <td>P 9,000</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <!-- Contact Form -->
+  <section id="contact-box">
+    <form>
+      <h3>Message Us</h3>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Write Your Message Here..."></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+</body>
+
+</html>
